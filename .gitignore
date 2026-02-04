@@ -1,0 +1,14 @@
+build/
+weights/
+tokenizer/
+*.ptx
+*.ncu-rep
+*.nsys-rep
+*.qdrep
+*.sqlite
+__pycache__/
+*.pyc
+.vs/
+.vscode/
+CMakeUserPresets.json
+.claude
