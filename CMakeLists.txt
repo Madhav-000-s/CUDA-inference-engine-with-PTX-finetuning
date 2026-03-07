@@ -27,8 +27,9 @@ endif()
 add_compile_options(
     $<$<COMPILE_LANGUAGE:CUDA>:-O3>
     $<$<COMPILE_LANGUAGE:CUDA>:--use_fast_math>
-    $<$<COMPILE_LANGUAGE:CUDA>:-lineinfo>               # keep source lines for ncu
-    $<$<COMPILE_LANGUAGE:CUDA>:-Xptxas=-v>               # print reg/smem usage per kernel
+    $<$<COMPILE_LANGUAGE:CUDA>:-lineinfo>                      # keep source lines for ncu
+    $<$<COMPILE_LANGUAGE:CUDA>:-Xptxas=-v>                      # print reg/smem usage per kernel
+    $<$<COMPILE_LANGUAGE:CUDA>:-allow-unsupported-compiler>     # MSVC 14.50 is newer than CUDA 12.8 knows
 )
 
 file(GLOB KERNEL_SRCS CONFIGURE_DEPENDS src/kernels/*.cu)
