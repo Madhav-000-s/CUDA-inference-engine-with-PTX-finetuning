@@ -9,9 +9,9 @@ set(CMAKE_CUDA_STANDARD_REQUIRED ON)
 find_package(CUDAToolkit REQUIRED)
 
 # RTX 5050 = Blackwell = sm_120. Override with -DCMAKE_CUDA_ARCHITECTURES=... if needed.
-if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES)
-    set(CMAKE_CUDA_ARCHITECTURES 120)
-endif()
+# CMake pre-populates CMAKE_CUDA_ARCHITECTURES during compiler detection to a default
+# (often "52"), so a plain `if(NOT DEFINED ...)` guard is useless — set it unconditionally.
+set(CMAKE_CUDA_ARCHITECTURES 120 CACHE STRING "CUDA architectures" FORCE)
 
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
