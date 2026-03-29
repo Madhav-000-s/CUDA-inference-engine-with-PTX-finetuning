@@ -17,6 +17,11 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
 
+# Statically link the MSVC runtime so the binary doesn't depend on UCRT forwarder
+# DLLs (api-ms-win-crt-*.dll), which aren't always present as separate files on
+# Windows 10/11 — they're baked into ucrtbase.dll.
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+
 # MSVC: big-obj needed for heavy kernel templates; /fp:fast for FP16/FP32 math.
 if(MSVC)
     add_compile_options($<$<COMPILE_LANGUAGE:CXX>:/O2>
@@ -45,7 +50,7 @@ target_include_directories(inference PRIVATE
     include
     ${CUDAToolkit_INCLUDE_DIRS}
 )
-target_link_libraries(inference PRIVATE CUDA::cudart)
+target_link_libraries(inference PRIVATE CUDA::cudart_static)
 set_target_properties(inference PROPERTIES
     CUDA_SEPARABLE_COMPILATION OFF
     CUDA_RESOLVE_DEVICE_SYMBOLS ON
