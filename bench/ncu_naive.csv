@@ -1,0 +1,5 @@
+==PROF== Connected to process 28440 (C:\Users\super\OneDrive\Documents\Projects\CUDA inference engine with PTX fine-tuning\build\inference.exe)
+==ERROR== An error was reported by the counter measurement library:
+==ERROR== Failed to initialize the profiler: LibraryNotLoaded. Check that a compatible driver library is loaded.
+==PROF== Trying to shutdown target application
+==ERROR== An error occurred while trying to profile.

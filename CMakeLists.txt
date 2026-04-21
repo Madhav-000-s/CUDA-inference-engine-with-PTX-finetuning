@@ -39,6 +39,11 @@ add_compile_options(
 
 file(GLOB KERNEL_SRCS CONFIGURE_DEPENDS src/kernels/*.cu)
 
+# Build knob for the hand-tuned PTX variant of qkv_proj. Off by default so the
+# stock build uses the naive kernel; flip with -DTLLM_HAND_TUNED_PTX=ON to
+# switch to the inline-PTX path that uses packed f16x2 FMAs and vector loads.
+option(TLLM_HAND_TUNED_PTX "Enable inline-PTX tuned qkv_proj kernel" OFF)
+
 add_executable(inference
     src/main.cpp
     src/weights.cpp
@@ -55,14 +60,47 @@ set_target_properties(inference PROPERTIES
     CUDA_SEPARABLE_COMPILATION OFF
     CUDA_RESOLVE_DEVICE_SYMBOLS ON
 )
+if(TLLM_HAND_TUNED_PTX)
+    target_compile_definitions(inference PRIVATE TLLM_QKV_HAND_TUNED_PTX)
+endif()
+
+# Micro-benchmark for qkv_proj (times just that kernel, 10000 iterations).
+add_executable(bench_qkv
+    src/bench_qkv.cu
+    src/kernels/qkv_proj.cu
+)
+target_include_directories(bench_qkv PRIVATE
+    include
+    ${CUDAToolkit_INCLUDE_DIRS}
+)
+target_link_libraries(bench_qkv PRIVATE CUDA::cudart_static)
+set_target_properties(bench_qkv PROPERTIES
+    CUDA_SEPARABLE_COMPILATION OFF
+    CUDA_RESOLVE_DEVICE_SYMBOLS ON
+)
+if(TLLM_HAND_TUNED_PTX)
+    target_compile_definitions(bench_qkv PRIVATE TLLM_QKV_HAND_TUNED_PTX)
+endif()
 
 # Handy side target: dump PTX for qkv_proj.cu for the hand-tune step.
 add_custom_target(qkv_ptx
     COMMAND ${CMAKE_CUDA_COMPILER}
             -arch=sm_120 -O3 --use_fast_math -ptx
+            -std=c++17 -allow-unsupported-compiler
             -I${CMAKE_SOURCE_DIR}/include
             ${CMAKE_SOURCE_DIR}/src/kernels/qkv_proj.cu
             -o ${CMAKE_BINARY_DIR}/qkv_proj.ptx
     COMMENT "Generating qkv_proj.ptx"
+    VERBATIM
+)
+add_custom_target(qkv_ptx_tuned
+    COMMAND ${CMAKE_CUDA_COMPILER}
+            -arch=sm_120 -O3 --use_fast_math -ptx
+            -std=c++17 -allow-unsupported-compiler
+            -DTLLM_QKV_HAND_TUNED_PTX
+            -I${CMAKE_SOURCE_DIR}/include
+            ${CMAKE_SOURCE_DIR}/src/kernels/qkv_proj.cu
+            -o ${CMAKE_BINARY_DIR}/qkv_proj_tuned.ptx
+    COMMENT "Generating qkv_proj_tuned.ptx"
     VERBATIM
 )

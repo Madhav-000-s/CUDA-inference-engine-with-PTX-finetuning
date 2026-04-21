@@ -1,0 +1,497 @@
+typedef char __nv_bool;
+#line 3032 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\driver_types.h"
+struct CUstream_st;
+#line 4624 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+struct __half;
+#line 5072 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+struct __half2;
+#line 151 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+struct _ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiEUljE_;
+#line 84 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+enum _ZN2nv6target6detail11sm_selectorE {
+#line 86 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_35E = 35ULL,
+#line 87 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_37E = 37ULL,
+#line 88 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_50E = 50ULL,
+#line 89 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_52E = 52ULL,
+#line 90 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_53E,
+#line 91 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_60E = 60ULL,
+#line 92 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_61E,
+#line 93 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_62E,
+#line 94 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_70E = 70ULL,
+#line 95 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_72E = 72ULL,
+#line 96 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_75E = 75ULL,
+#line 97 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_80E = 80ULL,
+#line 98 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_86E = 86ULL,
+#line 99 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_87E,
+#line 100 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_89E = 89ULL,
+#line 101 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\nv/target"
+_ZN2nv6target6detail11sm_selector5sm_90E};
+#line 188 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\vcruntime.h"
+typedef unsigned long long size_t;
+#include "crt/device_runtime.h"
+#line 18 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\stdint.h"
+typedef signed char int8_t;
+#line 24 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\stdint.h"
+typedef unsigned uint32_t;
+#line 4624 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+struct __align__(2) __half {
+#line 4629 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+unsigned short __x;};
+#line 5072 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+struct __align__(4) __half2 {
+#line 5076 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+struct __half x;
+#line 5080 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+struct __half y;};
+#line 151 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+struct _ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiEUljE_ {char __nv_no_debug_dummy_end_padding_0;};
+#line 60 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\include\\tensor.hpp"
+typedef struct __half _ZN4tllm6half_tE;
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#line 145 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\crt/device_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) float __int_as_float(int);
+#endif
+#if !defined(__CUDABE__)
+#line 154 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\crt/device_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) int __float_as_int(float);
+#endif
+#if !defined(__CUDABE__)
+#line 173 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\crt/device_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) void __syncthreads(void);
+#endif
+#if !defined(__CUDABE__)
+#line 406 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+ __device_builtin__ ___device__(extern  __no_sc__) unsigned __nvvm_shfl_bfly_sync(unsigned, unsigned, unsigned, unsigned);
+#endif
+#line 444 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+___device__(static  __no_sc__) __inline__ float _ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6015__shfl_xor_syncEjfii(unsigned, float, int, int);
+#line 2924 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\crt/device_functions.h"
+___device__(extern  __no_sc__) unsigned __cudaPushCallConfiguration(struct dim3, struct dim3, size_t, struct CUstream_st *);
+#line 546 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+___device__(static  __no_sc__) __inline__ struct __half _ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6012__float2halfEf(const float);
+#line 705 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+___device__(static  __no_sc__) __inline__ float _ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6012__half2floatE6__half(const struct __half);
+#line 1489 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+___device__(static  __no_sc__) __inline__ struct __half _ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6010__low2halfE7__half2(const struct __half2 *);
+#line 1540 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+___device__(static  __no_sc__) __inline__ struct __half _ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6011__high2halfE7__half2(const struct __half2 *);
+#line 79 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__global__ __var_used__ extern void _ZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_ii(struct __half *__restrict__, const int8_t *__restrict__, const struct __half *__restrict__, const struct __half *__restrict__, int, int);
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\vector_types.h"
+___device__(extern  __no_sc__) void _ZN4dim3C1Ejjj(struct dim3 *const, unsigned, unsigned, unsigned);
+___device__(extern  __no_sc__) void _ZN4dim3C2Ejjj(struct dim3 *const, unsigned, unsigned, unsigned);
+#line 5121 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+___device__(extern  __no_sc__) void _ZN7__half2C1ERKS_(struct __half2 *const, const struct __half2 *);
+___device__(extern  __no_sc__) void _ZN7__half2C2ERKS_(struct __half2 *const, const struct __half2 *);
+#line 151 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+___device__(static  __no_sc__) float _ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiENKUljE_clEj(const struct _ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiEUljE_ *const, uint32_t);
+#line 161 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ __attribute__((nv_weak_odr))  __shared__  __var_used__ float _ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiE8warp_acc[8];
+#include "common_functions.h"
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#line 444 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+___device__(static  __no_sc__) __inline__ float _ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6015__shfl_xor_syncEjfii(
+#line 444 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+unsigned mask, 
+#line 444 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+float var, 
+#line 444 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+int laneMask, 
+#line 444 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+int width){
+#line 444 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+{  unsigned __T0;
+ unsigned __T1;
+ unsigned __T2;
+ unsigned __T3;
+#line 446 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+ int __cuda_local_var_389903_6_non_const_ret;
+#line 447 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+ int __cuda_local_var_389904_13_non_const_c;
+#line 448 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+__cuda_local_var_389904_13_non_const_c = (((32 - width) << 8) | 31);
+#line 449 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+__cuda_local_var_389903_6_non_const_ret = ((int)(((((__T0 = mask) , (void)(__T1 = ((unsigned)(__float_as_int(var))))) , (void)(__T2 = ((unsigned)laneMask))) , (void)(__T3 = ((unsigned)__cuda_local_var_389904_13_non_const_c))) , (__nvvm_shfl_bfly_sync(__T0, __T1, __T2, __T3))));
+#line 450 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+return __int_as_float(__cuda_local_var_389903_6_non_const_ret);
+#line 451 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\sm_30_intrinsics.hpp"
+}}
+#line 546 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+___device__(static  __no_sc__) __inline__ struct __half _ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6012__float2halfEf(
+#line 546 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+const float a){
+#line 547 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+{  struct __half __T4;
+#line 548 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+ struct __half __cuda_local_var_538290_12_non_const_val;
+#line 549 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+{
+#line 549 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+__asm("{  cvt.rn.f16.f32 %0, %1;}\n" : "=h" (*((unsigned short *)(&__cuda_local_var_538290_12_non_const_val))) : "f" (a));
+#line 549 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+}
+#line 561 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+{
+#line 561 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+__T4 = ((*(struct __half *)&__cuda_local_var_538290_12_non_const_val));
+#line 561 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+return __T4; }
+#line 562 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+}}
+#line 705 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+___device__(static  __no_sc__) __inline__ float _ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6012__half2floatE6__half(
+#line 705 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+const struct __half a){
+#line 706 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+{
+#line 707 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+ float __cuda_local_var_538387_11_non_const_val;
+#line 708 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+{
+#line 708 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+__asm("{  cvt.f32.f16 %0, %1;}\n" : "=f" (__cuda_local_var_538387_11_non_const_val) : "h" (*((const unsigned short *)(&a))));
+#line 708 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+}
+#line 713 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+return __cuda_local_var_538387_11_non_const_val;
+#line 714 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+}}
+#line 1489 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+___device__(static  __no_sc__) __inline__ struct __half _ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6010__low2halfE7__half2(
+#line 1489 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+const struct __half2 *a){
+#line 1490 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+{  struct __half __T5;
+#line 1491 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+ struct __half __cuda_local_var_538857_12_non_const_ret;
+#line 1492 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+{
+#line 1492 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+__asm("{.reg .f16 low,high;\n mov.b32 {low,high}, %1;\n mov.b16 %0, low;}" : "=h" (*((unsigned short *)(&__cuda_local_var_538857_12_non_const_ret))) : "r" (*((const unsigned *)a)));
+#line 1492 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+}
+#line 1499 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+{
+#line 1499 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+__T5 = ((*(struct __half *)&__cuda_local_var_538857_12_non_const_ret));
+#line 1499 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+return __T5; }
+#line 1500 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+}}
+#line 1540 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+___device__(static  __no_sc__) __inline__ struct __half _ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6011__high2halfE7__half2(
+#line 1540 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+const struct __half2 *a){
+#line 1541 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+{  struct __half __T6;
+#line 1542 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+ struct __half __cuda_local_var_538891_12_non_const_ret;
+#line 1543 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+{
+#line 1543 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+__asm("{.reg .f16 low,high;\n mov.b32 {low,high}, %1;\n mov.b16 %0, high;}" : "=h" (*((unsigned short *)(&__cuda_local_var_538891_12_non_const_ret))) : "r" (*((const unsigned *)a)));
+#line 1543 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+}
+#line 1550 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+{
+#line 1550 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+__T6 = ((*(struct __half *)&__cuda_local_var_538891_12_non_const_ret));
+#line 1550 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+return __T6; }
+#line 1551 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\cuda_fp16.hpp"
+}}
+#line 79 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ __attribute__((nv_linkonce_odr)) __global__ __var_used__ void _ZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_ii(
+#line 79 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+struct __half *__restrict__ out, 
+#line 80 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+const int8_t *__restrict__ W, 
+#line 81 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+const struct __half *__restrict__ scales, 
+#line 82 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+const struct __half *__restrict__ x, 
+#line 83 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+int out_dim, 
+#line 83 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+int in_dim){
+#line 83 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+{
+#line 84 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ int __cuda_local_var_545792_15_non_const_o;
+#line 85 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ int __cuda_local_var_545793_15_non_const_tid;
+#line 88 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ const int8_t *__cuda_local_var_545796_19_non_const_W_row;
+#line 91 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545799_14_non_const_acc01;
+#line 92 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545800_14_non_const_acc23;
+#line 93 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545801_14_non_const_acc45;
+#line 94 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545802_14_non_const_acc67;
+#line 151 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ struct _ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiEUljE_ __cuda_local_var_545859_10_non_const_sum_f16x2;
+#line 155 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ float __cuda_local_var_545863_11_non_const_acc;
+#line 162 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ int __cuda_local_var_545870_15_non_const_lane;
+#line 163 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ int __cuda_local_var_545871_15_non_const_wid;
+#line 84 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545792_15_non_const_o = ((int)(blockIdx.x));
+#line 85 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545793_15_non_const_tid = ((int)(threadIdx.x));
+#line 86 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+if (__cuda_local_var_545792_15_non_const_o >= out_dim) {
+#line 86 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+return; }
+#line 88 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545796_19_non_const_W_row = (W + (((size_t)__cuda_local_var_545792_15_non_const_o) * ((unsigned long long)in_dim)));
+#line 91 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545799_14_non_const_acc01 = 0U;
+#line 92 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545800_14_non_const_acc23 = 0U;
+#line 93 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545801_14_non_const_acc45 = 0U;
+#line 94 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545802_14_non_const_acc67 = 0U;
+#line 96 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+{
+#line 96 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ int i0;
+#line 96 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+i0 = (__cuda_local_var_545793_15_non_const_tid * 8);
+#line 96 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+for (; i0 < in_dim; i0 += 2048)
+#line 96 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+{
+#line 98 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545806_18_non_const_w_lo;
+#line 98 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545806_24_non_const_w_hi;
+#line 104 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545812_18_non_const_a01;
+#line 104 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545812_23_non_const_a23;
+#line 104 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545812_28_non_const_a45;
+#line 104 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545812_33_non_const_a67;
+#line 113 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545821_18_non_const_b0;
+#line 113 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545821_22_non_const_b1;
+#line 113 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545821_26_non_const_b2;
+#line 113 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545821_30_non_const_b3;
+#line 113 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545821_34_non_const_b4;
+#line 113 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545821_38_non_const_b5;
+#line 113 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545821_42_non_const_b6;
+#line 113 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545821_46_non_const_b7;
+#line 126 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545834_18_non_const_s16x2_01;
+#line 126 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545834_28_non_const_s16x2_23;
+#line 126 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545834_38_non_const_s16x2_45;
+#line 126 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545834_48_non_const_s16x2_67;
+#line 133 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545841_18_non_const_w_f01;
+#line 133 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545841_25_non_const_w_f23;
+#line 133 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545841_32_non_const_w_f45;
+#line 133 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ uint32_t __cuda_local_var_545841_39_non_const_w_f67;
+#line 99 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm volatile("ld.global.nc.v2.u32 {%0, %1}, [%2];" : "=r" (__cuda_local_var_545806_18_non_const_w_lo), "=r" (__cuda_local_var_545806_24_non_const_w_hi) : "l" (__cuda_local_var_545796_19_non_const_W_row + i0));
+#line 105 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm volatile("ld.global.nc.v4.u32 {%0, %1, %2, %3}, [%4];" : "=r" (__cuda_local_var_545812_18_non_const_a01), "=r" (__cuda_local_var_545812_23_non_const_a23), "=r" (__cuda_local_var_545812_28_non_const_a45), "=r" (__cuda_local_var_545812_33_non_const_a67) : "l" (x + i0));
+#line 114 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("cvt.s32.s8 %0, %1;" : "=r" (__cuda_local_var_545821_18_non_const_b0) : "r" (__cuda_local_var_545806_18_non_const_w_lo));
+#line 115 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("cvt.s32.s8 %0, %1;" : "=r" (__cuda_local_var_545821_22_non_const_b1) : "r" (__cuda_local_var_545806_18_non_const_w_lo >> 8));
+#line 116 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("cvt.s32.s8 %0, %1;" : "=r" (__cuda_local_var_545821_26_non_const_b2) : "r" (__cuda_local_var_545806_18_non_const_w_lo >> 16));
+#line 117 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("cvt.s32.s8 %0, %1;" : "=r" (__cuda_local_var_545821_30_non_const_b3) : "r" (__cuda_local_var_545806_18_non_const_w_lo >> 24));
+#line 118 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("cvt.s32.s8 %0, %1;" : "=r" (__cuda_local_var_545821_34_non_const_b4) : "r" (__cuda_local_var_545806_24_non_const_w_hi));
+#line 119 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("cvt.s32.s8 %0, %1;" : "=r" (__cuda_local_var_545821_38_non_const_b5) : "r" (__cuda_local_var_545806_24_non_const_w_hi >> 8));
+#line 120 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("cvt.s32.s8 %0, %1;" : "=r" (__cuda_local_var_545821_42_non_const_b6) : "r" (__cuda_local_var_545806_24_non_const_w_hi >> 16));
+#line 121 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("cvt.s32.s8 %0, %1;" : "=r" (__cuda_local_var_545821_46_non_const_b7) : "r" (__cuda_local_var_545806_24_non_const_w_hi >> 24));
+#line 127 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("prmt.b32 %0, %1, %2, 0x5410;" : "=r" (__cuda_local_var_545834_18_non_const_s16x2_01) : "r" (__cuda_local_var_545821_18_non_const_b0), "r" (__cuda_local_var_545821_22_non_const_b1));
+#line 128 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("prmt.b32 %0, %1, %2, 0x5410;" : "=r" (__cuda_local_var_545834_28_non_const_s16x2_23) : "r" (__cuda_local_var_545821_26_non_const_b2), "r" (__cuda_local_var_545821_30_non_const_b3));
+#line 129 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("prmt.b32 %0, %1, %2, 0x5410;" : "=r" (__cuda_local_var_545834_38_non_const_s16x2_45) : "r" (__cuda_local_var_545821_34_non_const_b4), "r" (__cuda_local_var_545821_38_non_const_b5));
+#line 130 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("prmt.b32 %0, %1, %2, 0x5410;" : "=r" (__cuda_local_var_545834_48_non_const_s16x2_67) : "r" (__cuda_local_var_545821_42_non_const_b6), "r" (__cuda_local_var_545821_46_non_const_b7));
+#line 134 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("cvt.rn.f16x2.s16x2 %0, %1;" : "=r" (__cuda_local_var_545841_18_non_const_w_f01) : "r" (__cuda_local_var_545834_18_non_const_s16x2_01));
+#line 135 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("cvt.rn.f16x2.s16x2 %0, %1;" : "=r" (__cuda_local_var_545841_25_non_const_w_f23) : "r" (__cuda_local_var_545834_28_non_const_s16x2_23));
+#line 136 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("cvt.rn.f16x2.s16x2 %0, %1;" : "=r" (__cuda_local_var_545841_32_non_const_w_f45) : "r" (__cuda_local_var_545834_38_non_const_s16x2_45));
+#line 137 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("cvt.rn.f16x2.s16x2 %0, %1;" : "=r" (__cuda_local_var_545841_39_non_const_w_f67) : "r" (__cuda_local_var_545834_48_non_const_s16x2_67));
+#line 140 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("fma.rn.f16x2 %0, %1, %2, %0;" : "+r" (__cuda_local_var_545799_14_non_const_acc01) : "r" (__cuda_local_var_545841_18_non_const_w_f01), "r" (__cuda_local_var_545812_18_non_const_a01));
+#line 142 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("fma.rn.f16x2 %0, %1, %2, %0;" : "+r" (__cuda_local_var_545800_14_non_const_acc23) : "r" (__cuda_local_var_545841_25_non_const_w_f23), "r" (__cuda_local_var_545812_23_non_const_a23));
+#line 144 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("fma.rn.f16x2 %0, %1, %2, %0;" : "+r" (__cuda_local_var_545801_14_non_const_acc45) : "r" (__cuda_local_var_545841_32_non_const_w_f45), "r" (__cuda_local_var_545812_28_non_const_a45));
+#line 146 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__asm("fma.rn.f16x2 %0, %1, %2, %0;" : "+r" (__cuda_local_var_545802_14_non_const_acc67) : "r" (__cuda_local_var_545841_39_non_const_w_f67), "r" (__cuda_local_var_545812_33_non_const_a67));
+#line 148 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+} }
+#line 151 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+memset((char *)&__cuda_local_var_545859_10_non_const_sum_f16x2, 0,sizeof(__cuda_local_var_545859_10_non_const_sum_f16x2));
+#line 155 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545863_11_non_const_acc = ((((_ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiENKUljE_clEj((((const struct _ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiEUljE_ *)&__cuda_local_var_545859_10_non_const_sum_f16x2)), __cuda_local_var_545799_14_non_const_acc01)) + (_ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiENKUljE_clEj((((const struct _ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiEUljE_ *)&__cuda_local_var_545859_10_non_const_sum_f16x2)), __cuda_local_var_545800_14_non_const_acc23))) + (_ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiENKUljE_clEj((((const struct _ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiEUljE_ *)&__cuda_local_var_545859_10_non_const_sum_f16x2)), __cuda_local_var_545801_14_non_const_acc45))) + (_ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiENKUljE_clEj((((const struct _ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiEUljE_ *)&__cuda_local_var_545859_10_non_const_sum_f16x2)), __cuda_local_var_545802_14_non_const_acc67)));
+#line 158 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+{
+#line 158 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ int mask;
+#line 158 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+mask = 16;
+#line 158 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+for (; mask > 0; mask >>= 1) {  float __T7;
+ int __T8;
+#line 159 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545863_11_non_const_acc += (((__T7 = __cuda_local_var_545863_11_non_const_acc) , (void)(__T8 = mask)) , (_ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6015__shfl_xor_syncEjfii(4294967295U, __T7, __T8, 32))); } }
+#line 162 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545870_15_non_const_lane = (__cuda_local_var_545793_15_non_const_tid & 31);
+#line 163 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545871_15_non_const_wid = (__cuda_local_var_545793_15_non_const_tid >> 5);
+#line 164 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+if (__cuda_local_var_545870_15_non_const_lane == 0) {
+#line 164 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+((_ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiE8warp_acc)[__cuda_local_var_545871_15_non_const_wid]) = __cuda_local_var_545863_11_non_const_acc; }
+#line 165 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__syncthreads();
+#line 167 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+if (__cuda_local_var_545871_15_non_const_wid == 0)
+#line 167 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+{
+#line 168 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ float __cuda_local_var_545876_15_non_const_a;
+#line 168 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545876_15_non_const_a = ((__cuda_local_var_545793_15_non_const_tid < 8) ? ((_ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiE8warp_acc)[__cuda_local_var_545870_15_non_const_lane]) : (0.0F));
+#line 169 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+{
+#line 169 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ int mask;
+#line 169 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+mask = 16;
+#line 169 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+for (; mask > 0; mask >>= 1) {  float __T9;
+ int __T10;
+#line 170 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+__cuda_local_var_545876_15_non_const_a += (((__T9 = __cuda_local_var_545876_15_non_const_a) , (void)(__T10 = mask)) , (_ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6015__shfl_xor_syncEjfii(4294967295U, __T9, __T10, 32))); } }
+#line 171 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+if (__cuda_local_var_545870_15_non_const_lane == 0)
+#line 171 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+{  struct __half __T11;
+#line 172 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+(__T11 = (_ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6012__float2halfEf((__cuda_local_var_545876_15_non_const_a * (_ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6012__half2floatE6__half(((*(struct __half *)&(scales[__cuda_local_var_545792_15_non_const_o]))))))))) , (void)((out[__cuda_local_var_545792_15_non_const_o]) = __T11);
+#line 173 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+}
+#line 174 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+} 
+#line 175 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+}}
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\vector_types.h"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ void _ZN4dim3C1Ejjj( struct dim3 *const this, 
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\vector_types.h"
+unsigned vx, 
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\vector_types.h"
+unsigned vy, 
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\vector_types.h"
+unsigned vz){
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\vector_types.h"
+{
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\vector_types.h"
+(this->x) = vx;
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\vector_types.h"
+(this->y) = vy;
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\vector_types.h"
+(this->z) = vz; 
+#line 435 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include\\vector_types.h"
+}}
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ void _ZN4dim3C2Ejjj( struct dim3 *const this,  unsigned __T12,  unsigned __T13,  unsigned __T14){ {  _ZN4dim3C1Ejjj(this, __T12, __T13, __T14);  }}
+#line 5121 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ void _ZN7__half2C1ERKS_( struct __half2 *const this, 
+#line 5121 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+const struct __half2 *src){
+#line 5121 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+{
+#line 5122 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+{
+#line 5122 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+(*((unsigned *)this)) = (*((const unsigned *)src));
+#line 5122 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+} 
+#line 5128 "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin/../include\\cuda_fp16.h"
+}}
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ void _ZN7__half2C2ERKS_( struct __half2 *const this,  const struct __half2 *__T15){ {  _ZN7__half2C1ERKS_(this, __T15);  }}
+#line 151 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+___device__(static  __no_sc__) __inline__ float _ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiENKUljE_clEj( const struct _ZZN4tllm7kernels44_GLOBAL__N__bc1937e1_11_qkv_proj_cu_93625e6021qkv_proj_kernel_tunedILi256EEEvP6__halfPKaPKS3_S8_iiEUljE_ *const this, 
+#line 151 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+uint32_t h2){
+#line 151 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+{  struct __half2 __T16;
+ struct __half2 __T17;
+#line 152 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+ struct __half2 __cuda_local_var_545860_17_non_const_v;
+#line 152 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+_ZN7__half2C1ERKS_((&__cuda_local_var_545860_17_non_const_v), ((const struct __half2 *)((struct __half2 *)(&h2))));
+#line 153 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+return (_ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6012__half2floatE6__half((_ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6010__low2halfE7__half2(((const struct __half2 *)((_ZN7__half2C1ERKS_((&__T16), (((const struct __half2 *)&__cuda_local_var_545860_17_non_const_v)))) , (&__T16))))))) + (_ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6012__half2floatE6__half((_ZN42_INTERNAL_bc1937e1_11_qkv_proj_cu_93625e6011__high2halfE7__half2(((const struct __half2 *)((_ZN7__half2C1ERKS_((&__T17), (((const struct __half2 *)&__cuda_local_var_545860_17_non_const_v)))) , (&__T17)))))));
+#line 154 "C:\\Users\\super\\OneDrive\\Documents\\Projects\\CUDA inference engine with PTX fine-tuning\\src\\kernels\\qkv_proj.cu"
+}}

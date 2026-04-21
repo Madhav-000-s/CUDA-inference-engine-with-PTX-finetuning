@@ -1,0 +1,1 @@
+-D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -nologo -c -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc "-IC:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/bin/../include"   "C:\Users\super\OneDrive\Documents\Projects\CUDA inference engine with PTX fine-tuning\build_tuned\CMakeFiles\4.2.3-msvc3\CompilerIdCUDA\tmp\CMakeCUDACompilerId.cudafe1.cpp" 

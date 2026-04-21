@@ -1,0 +1,18 @@
+# ninja log v6
+24	65	7984789075794057	C:/Users/super/OneDrive/Documents/Projects/CUDA inference engine with PTX fine-tuning/build_tuned/CMakeFiles/cmake.verify_globs	92b2b2ae238caa3c
+75	1148	7984789076271466	CMakeFiles/inference.dir/src/weights.cpp.obj	78c71390b8760859
+68	1739	7984789076226188	CMakeFiles/inference.dir/src/main.cpp.obj	23a45b8781663367
+135	2886	7984789076902688	CMakeFiles/inference.dir/src/kernels/swiglu.cu.obj	c2d3a83fe19d5b9
+119	2904	7984789076674504	CMakeFiles/inference.dir/src/kernels/rope.cu.obj	c43704a7b51aab73
+104	2922	7984789076572417	CMakeFiles/inference.dir/src/kernels/qkv_proj.cu.obj	d43e1597a1732b29
+153	2981	7984789077083526	CMakeFiles/bench_qkv.dir/src/kernels/qkv_proj.cu.obj	2045dd119380de66
+96	2998	7984789076514471	CMakeFiles/inference.dir/src/kernels/matmul_int8.cu.obj	41bbfef1202505a5
+112	3019	7984789076631412	CMakeFiles/inference.dir/src/kernels/rmsnorm.cu.obj	ae4ba3095a48ad0e
+127	3024	7984789076765804	CMakeFiles/inference.dir/src/kernels/sampling.cu.obj	3a96ed899f76c99f
+89	3133	7984789076427832	CMakeFiles/inference.dir/src/kernels/attention.cu.obj	5eb56244a02bfff5
+82	3843	7984789076369332	CMakeFiles/inference.dir/src/model.cu.obj	5721d8a81cd4ff4d
+3844	4263	7984789113986310	CMakeFiles/inference.dir/cmake_device_link.obj	844c629b77b34407
+4264	4575	7984789118171624	inference.exe	4d7b39027b294127
+144	4781	7984789076975836	CMakeFiles/bench_qkv.dir/src/bench_qkv.cu.obj	bf322049b2704b99
+4782	5136	7984789123362534	CMakeFiles/bench_qkv.dir/cmake_device_link.obj	4e3a4e79018b00e4
+5136	5413	7984789126900013	bench_qkv.exe	441e982f8803aa4a
